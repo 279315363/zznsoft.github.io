@@ -45,6 +45,7 @@
             "message",
             function(e) {
                 window.ReactNativeWebView.postMessage(JSON.stringify(e.data));
+                alert('您选择了:' + e.data.name + ',' + e.data.location)
             },
             false
         );
